@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models\courses\exercises;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ExerciseAnswers extends Model
+{
+    public function exercise()
+    {
+        return $this->belongsTo(CourseExercises::class, 'exercise_id', 'id');
+    }
+}

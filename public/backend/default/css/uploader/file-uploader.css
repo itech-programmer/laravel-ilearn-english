@@ -1,0 +1,121 @@
+.file-upload {
+    position: relative;
+    height: auto;
+    padding: 5px;
+}
+.file-upload .file-edit {
+    position: absolute;
+    right: -3px;
+    z-index: 1;
+    top: -3px;
+    bottom: 54px;
+}
+.file-upload .file-edit input {
+    display: none;
+}
+.file-upload .file-edit input + label {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    color: #ffffff;
+    margin-bottom: 0;
+    border-radius: 24%;
+    background: #ffbc53;
+    cursor: pointer;
+    font-weight: normal;
+    border: 1px solid #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+.file-upload .file-edit input + label:hover {
+    color: #ffffff;
+    background: #0d6efd;
+    border: 1px solid #ffffff;
+}
+.file-upload .file-edit input + label:after {
+    content: "\f303";
+    font-family: "Font Awesome 6 Pro";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+.file-upload .file-preview {
+    width: 100%;
+    height: 265px;
+    position: relative;
+    border-radius: 6%;
+    border: 6px solid #f8f8f8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.file-upload .file-preview > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4%;
+    display: block;
+    transform: scale(1.1,1.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*answer image*/
+
+.answer-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+.answer-image-wrapper:after {
+    content: attr(data-text);
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    pointer-events: none;
+    z-index: 1;
+    color: #999;
+    border-radius: 5px 10px 10px 5px;
+    font-weight: 300;
+}
+
+.answer-image-wrapper:before {
+    content: "Upload";
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ffbc53;
+    color: #fff;
+    font-weight: 300;
+    z-index: 2;
+    padding: 0 15px;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.answer-image-wrapper:hover:before {
+    background: #0d6efd;
+}
+.answer-image-wrapper input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}

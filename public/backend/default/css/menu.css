@@ -1,0 +1,83 @@
+#category-wrapper {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+}
+
+#category-wrapper h5 {
+    font-size: 16px;
+    color: rgba(0, 0, 0, .6);
+    margin: 0 0 10px;
+    padding: 0 5px;
+    position: relative;
+}
+
+#category-wrapper h5:after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #80C8A0;
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+    box-shadow: -8px -8px #80C8A0, 0 -8px #80C8A0, -8px 0 #80C8A0;
+}
+
+.menu {
+    width: auto;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+.menu li {
+    margin: 12px 0 0 0;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .6);
+    padding: 5px;
+    position: relative;
+    transition: .3s linear;
+}
+
+.submenu {
+    width: auto;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+.submenu > li > a {
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    color: #80C8A0;
+    padding: 5px;
+    position: relative;
+    transition: .3s linear;
+}
+
+.submenu > li > a:after {
+    content: "\f105";
+    font-family: "Font Awesome 6 Pro";
+    position: absolute;
+    right: 5px;
+    color: white;
+    transition: .2s linear;
+}
+
+.submenu > li > a:hover {
+    background: #80C8A0;
+    border-radius: 8px;
+    color: white;
+}
